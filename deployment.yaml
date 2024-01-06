@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: welcome-app-deployment
   labels:
-    app: nginx
+    app: welcome-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: welcome-app
   template:
     metadata:
       labels:
-        app: nginx
+        app: welcome-app
     spec:
       containers:
-      - name: nginx
+      - name: welcome-app
         image: 15607c-62
         ports:
-        - containerPort: 80
+        - containerPort: 8080
