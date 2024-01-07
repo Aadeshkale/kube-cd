@@ -15,7 +15,7 @@ spec:
         app: welcome-app
     spec:
       containers:
-      - image: notespro:15
+      - image: welcome-app:asd45
         name: welcome-app
         ports:
         - containerPort: 8080
