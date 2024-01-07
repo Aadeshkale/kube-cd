@@ -15,7 +15,7 @@ spec:
         app: welcome-app
     spec:
       containers:
-      - image: welcome-app:6261-AD
+      - image: welcome-app:6262-AD
         name: welcome-app
         ports:
         - containerPort: 8080
